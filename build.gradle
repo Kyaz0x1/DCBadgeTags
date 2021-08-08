@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'net.kyaz0x1.dcbadgetags'
+version '1.0-SNAPSHOT'
+
+compileJava.options.encoding = 'UTF-8'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name 'm2-dv8tion'
+        url 'https://m2.dv8tion.net/releases'
+    }
+}
+
+dependencies {
+    implementation group: 'net.dv8tion', name: 'JDA', version: '4.3.0_307'
+}
