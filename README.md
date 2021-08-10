@@ -1,4 +1,5 @@
 # DCBadgeTags
+A simple discord bot that adds a role according to the badges
 
 ### Demo
 <img src="img/DCBadgeTags.png" />
